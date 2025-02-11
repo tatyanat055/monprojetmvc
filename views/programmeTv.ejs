@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme TV - Chaîne Culturelle</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <% include('navbar') %> <!-- ✅ Inclusion correcte -->
+
+    <h1>Bienvenue sur la chaîne culturelle de Mayotte</h1>
+    <p>Découvrez les programmes diffusés aujourd'hui.</p>
+
+    <section>
+        <h2>Programme du jour</h2>
+        <ul>
+            <li>🕘 09:00 - Chigoma traditionnel</li>
+            <li>🕛 12:00 - Débat sur la culture mahoraise</li>
+            <li>🕓 16:00 - Mazaraka en direct</li>
+            <li>🕗 20:00 - Concert de chants traditionnels</li>
+        </ul>
+    </section>
+
+    <div class="container">
+        <h1>Programme TV</h1>
+        <table>
+            <tr>
+                <th>Heure</th>
+                <th>Emission</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>18h00</td>
+                <td>Chigoma</td>
+                <td>Danse traditionnelle Mahoraise</td>
+            </tr>
+            <tr>
+                <td>19h30</td>
+                <td>Déba Culturel</td>
+                <td>Discussion sur l'importance de la danse</td>
+            </tr>
+        </table>
+    </div>    
+
+    <% include('footer') %> <!-- ✅ Inclusion correcte -->
+
+</body>
+</html>
