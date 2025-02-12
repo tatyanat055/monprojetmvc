@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programme TV - Chaîne Culturelle</title>
+    <title>Programme TV - Chaîne Yatru</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
-    <% include('navbar') %> <!-- ✅ Inclusion correcte -->
+    <%- include('navbar') %> 
 
-    <h1>Bienvenue sur la chaîne culturelle de Mayotte</h1>
+    <h1>Bienvenue sur Chaîne Yatru</h1>
     <p>Découvrez les programmes diffusés aujourd'hui.</p>
 
     <section>
         <h2>Programme du jour</h2>
-        <ul>
-            <li>🕘 09:00 - Chigoma traditionnel</li>
-            <li>🕛 12:00 - Débat sur la culture mahoraise</li>
-            <li>🕓 16:00 - Mazaraka en direct</li>
-            <li>🕗 20:00 - Concert de chants traditionnels</li>
-        </ul>
     </section>
 
     <div class="container">
@@ -32,19 +26,39 @@
                 <th>Description</th>
             </tr>
             <tr>
+                <td>09h00</td>
+                <td>Zama za Halé </td>
+                <td>Histoire sur Mayotte</td>
+            </tr>
+            <tr>
+                <td>12h00</td>
+                <td>Journal de Midi</td>
+                <td>Les infos</td>
+            </tr>
+            <tr>
+                <td>13h15</td>
+                <td>Déba za halé</td>
+                <td>Chants traditionnelles</td>  
+            </tr>      
+            <tr>
                 <td>18h00</td>
-                <td>Chigoma</td>
-                <td>Danse traditionnelle Mahoraise</td>
+                <td>Journal en Français</td>
+                <td>Les infos en Français</td>
             </tr>
             <tr>
                 <td>19h30</td>
-                <td>Déba Culturel</td>
-                <td>Discussion sur l'importance de la danse</td>
+                <td>Journal en Shimaoré et Kibushi</td>
+                <td>Les infos en Shimaoré et Kibushi</td>
+            </tr>
+            <tr>
+                <td>20h15</td>
+                <td>Kala Oi Dala</td>
+                <td>Débat politiques avec des Politiciens</td>
             </tr>
         </table>
     </div>    
 
-    <% include('footer') %> <!-- ✅ Inclusion correcte -->
+    <%- include('footer') %> 
 
 </body>
 </html>

@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-
 // Configuration d'EJS comme moteur de rendu
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -10,17 +9,9 @@ app.set('views', path.join(__dirname, 'views'));
 // Middleware pour servir les fichiers statiques (CSS, images, etc.)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Définition des routes principales
+
 app.get('/', (req, res) => {
-    res.render('programmeTv'); // Page d'accueil affichant la programmation TV
-});
-
-app.get('/apropos', (req, res) => {
-    res.render('apropos');
-});
-
-app.get('/formulaire-programme', (req, res) => {
-    res.render('formulaireProgrammeTv');
+    res.render('accueil'); 
 });
 
 module.exports = app;

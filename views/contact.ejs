@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <% include('navbar') %> <!-- Inclusion de la navbar -->
+    <%- include('navbar') %> <!-- Inclusion de la navbar -->
 
     <h1>Contactez-nous</h1>
     <p>Remplissez le formulaire ci-dessous pour nous envoyer un message.</p>
@@ -24,7 +24,7 @@
                 <td><input type="text" id="prenom" name="prenom" required></td>
             </tr>
             <tr>
-                <td><label for="email">Adresse e-mail :</label></td>
+             <td><label for="email">Adresse e-mail :</label></td>
                 <td><input type="email" id="email" name="email" required></td>
             </tr>
             <tr>
@@ -35,7 +35,7 @@
         <button type="submit">Envoyer</button>
     </form>
 
-    <% include('footer') %> <!-- Inclusion du footer -->
+    <%- include('footer') %> 
 
 </body>
 </html>
