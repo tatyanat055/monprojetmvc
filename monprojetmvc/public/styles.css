@@ -1,0 +1,335 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* Rose clair */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    background-color: #fff; /* Blanc */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff66b2; /* Rose plus foncé */
+    font-weight: bold;
+}
+
+/* Contenu */
+h1 {
+    text-align: center;
+    color: #ff66b2;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Navbar */
+nav {
+    background-color: #ff66b2; /* Rose */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe6f2; /* Rose clair */
+}
+
+/* Section Présentation */
+.presentation {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Formulaire */
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff66b2;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e60073;
+}
+
+/* Appliquer le même fond que les autres pages */
+body {
+    background-color: #ffebf2; /* Rose clair */
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1, h2 {
+    color: #ff66b2;
+    text-align: center;
+}
+
+/* Tableau des programmes TV */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ff66b2;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff66b2;
+    color: white;
+}
+
+/* Boutons */
+button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #e60073;
+}
+/* Style du formulaire d'ajout de programme */
+form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #ff66b2;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff66b2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Centrer le bouton d'envoi */
+.form-button {
+    text-align: center;
+}
+
+/* Début de la partie "Mon espace*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffe6f2; /* Rose clair */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #d63384;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.btn-connexion {
+    padding: 10px 15px;
+    background-color: white;
+    color: #d63384;
+    border: 2px solid #d63384;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-connexion:hover {
+    background-color: #d63384;
+    color: white;
+}
+/*fin de la partie "Mon espace"*/
+/*Css de la partie "DIRECT"*/
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/*fin de la partie "DIRECT"*/
+
+/*Css de la partie "inscription.ejs"*/
+form {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #ff66b2;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff66b2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .form-button {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e60073;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  p a {
+    color: #e60073;
+    text-decoration: none;
+    font-weight: bold;
+  }
+/*Fin de la partie "inscription.ejs*/  

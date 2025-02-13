@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme TV - Chaîne Yatru</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <%- include('navbar') %> 
+
+    <h1>Bienvenue sur Chaîne Yatru</h1>
+    <p>Découvrez les programmes diffusés aujourd'hui.</p>
+
+    <section>
+        <h2>Programme du jour</h2>
+    </section>
+
+    <div class="container">
+        <h1>Programme TV</h1>
+        <table>
+            <tr>
+                <th>Heure</th>
+                <th>Emission</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>09h00</td>
+                <td>Zama za Halé </td>
+                <td>Histoire sur Mayotte</td>
+            </tr>
+            <tr>
+                <td>12h00</td>
+                <td>Journal de Midi</td>
+                <td>Les infos</td>
+            </tr>
+            <tr>
+                <td>13h15</td>
+                <td>Déba za halé</td>
+                <td>Chants traditionnelles</td>  
+            </tr>      
+            <tr>
+                <td>18h00</td>
+                <td>Journal en Français</td>
+                <td>Les infos en Français</td>
+            </tr>
+            <tr>
+                <td>19h30</td>
+                <td>Journal en Shimaoré et Kibushi</td>
+                <td>Les infos en Shimaoré et Kibushi</td>
+            </tr>
+            <tr>
+                <td>20h15</td>
+                <td>Kala Oi Dala</td>
+                <td>Débat politiques avec des Politiciens</td>
+            </tr>
+        </table>
+    </div>    
+
+    <%- include('footer') %> 
+
+</body>
+</html>
