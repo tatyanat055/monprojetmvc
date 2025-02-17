@@ -85,13 +85,11 @@ app.post('/login', (req, res) => {
     }
   });
   
-
   app.get('/deconnexion', (req, res) => {
-    // Simuler une déconnexion
-    console.log("Utilisateur déconnecté.");
-    res.redirect('/connexion'); // Redirection vers la page de connexion
-  });
-  
+    req.session.destroy();
+    res.redirect('/');
+}); //Suppression de la session et redirection à la page d'accueil
+
   
 
 
@@ -112,6 +110,8 @@ app.get('/inscription', (req, res) => {
     }
   });
   
+//Connexion à la base de données 
+connectDB();
 
 // Pour démarrer le serveur
 app.listen(PORT, () => {
