@@ -110,8 +110,20 @@ app.get('/inscription', (req, res) => {
     }
   });
   
-//Connexion à la base de données 
-connectDB();
+const authRoutes = require('./routes/auth');
+app.use(authRoutes);
+
+//Pour que la session fonctionne, on doit la configurer :
+const session = require('express-session');
+
+app.use(session({
+    secret: process.env.SESSION_SECRET, // Clé secrète stockée dans .env
+    resave: false,
+    saveUninitialized: false,
+    cookie: { secure: false } // Mettre true en production avec HTTPS
+}));
+
+
 
 // Pour démarrer le serveur
 app.listen(PORT, () => {
