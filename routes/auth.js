@@ -2,8 +2,13 @@ const express = require ('express');
 const bcrypt = require('bcrypt'); 
 const db = require('../db'); //Importation de la connexion MySQL
 const app = require('../app');
+const authController = require('../controllers/authController');
 
 const router = express.Router();
+
+//Route de connexion (pour afficher le formulaire de connexion)
+router.get('/connexion', authController.connexionView);
+router.post('/login',authController.authConnexion);
 
 //Route d'inscription
 router.post('/register', async (req, res) => {
@@ -28,37 +33,6 @@ router.post('/register', async (req, res) => {
              }
          );
     }); 
-});
-
-// Route de connexion
-router.post('/login', (req, res) => {
-    const { email, password } = req.body;
-
-    // Vérifier si l'utilisateur existe
-    db.query('SELECT * FROM users WHERE email = ?', [email], async (err, results) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).send('Erreur serveur.');
-        }
-
-        if (results.length === 0) {
-            return res.status(401).send('Email ou mot de passe incorrect.');
-        }
-
-        const user = results[0];
-
-        // Vérifier le mot de passe
-        const match = await bcrypt.compare(password, user.password);
-        if (!match) {
-            return res.status(401).send('Email ou mot de passe incorrect.');
-        }
-
-        // Créer la session utilisateur
-        req.session.userId = user.id;
-        req.session.userName = user.nom;
-
-        res.send('Connexion réussie !');
-    });
 });
 
 //Route pour afficher le nom d'utilisateur connecté 

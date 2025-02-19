@@ -58,12 +58,12 @@ app.post('/submit-programme', (req, res) => {
     res.send('<h1>Programme ajouté avec succès !</h1><p>Revenez à la page Programme TV.</p>');
 });
 
-// Route pour afficher la page de connexion
+/* Route pour afficher la page de connexion*/
 app.get('/connexion', (req, res) => {
     res.render('connexion');
-});
+}); 
 
-// Route pour traiter la connexion
+/* Route pour traiter la connexion*/
 app.post('/login', (req, res) => {
     const { email, password } = req.body;
   
@@ -83,7 +83,7 @@ app.post('/login', (req, res) => {
     } else {
       res.send("<h1>Échec de la connexion</h1><p>Adresse e-mail ou mot de passe incorrect.</p>");
     }
-  });
+  }); 
   
   app.get('/deconnexion', (req, res) => {
     req.session.destroy();
@@ -99,7 +99,7 @@ app.get('/inscription', (req, res) => {
   });
   
   // Route pour traiter le formulaire d'inscription
-  app.post('/register', (req, res) => {
+app.post('/register', (req, res) => {
     const { nom, prenom, email, password, confirmPassword } = req.body;
     
     if (password !== confirmPassword) {
@@ -108,10 +108,9 @@ app.get('/inscription', (req, res) => {
       console.log(`Nouvel utilisateur : ${nom} ${prenom} - ${email}`);
       res.send('<h1>Inscription réussie !</h1><p>Bienvenue sur notre plateforme.</p>');
     }
-  });
+});
   
-const authRoutes = require('./routes/auth');
-app.use(authRoutes);
+
 
 //Pour que la session fonctionne, on doit la configurer :
 const session = require('express-session');

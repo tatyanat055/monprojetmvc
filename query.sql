@@ -1,6 +1,6 @@
-[1]--Installation des dépendences--
+--[1]--Installation des dépendences--
 
-Sur Bash :
+/*Sur Bash :
 " npm install mysql2 dotenv bcrypt express-session "
 installation de plusieurs modules :
 mysql2 → pour interagir avec MySQL
@@ -33,7 +33,7 @@ On a défini la connexion à la base de données avec db.js (voir le code)
 => Enfin, on exporte connection pour l'utiliser dans d'autres fichiers (ex : pour exécuter des requêtes SQL).
 
 [4]  Création de la table users dans MySQL
-Dans MySQL, on a créé une table users avec cette requête SQL :
+Dans MySQL, on a créé une table users avec cette requête SQL : */
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,7 +43,7 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-=> id INT AUTO_INCREMENT PRIMARY KEY → chaque utilisateur a un ID unique qui s’incrémente automatiquement.
+/*=> id INT AUTO_INCREMENT PRIMARY KEY → chaque utilisateur a un ID unique qui s’incrémente automatiquement.
 => nom VARCHAR(100) NOT NULL → champ pour stocker le nom de l'utilisateur.
 => email VARCHAR(100) UNIQUE NOT NULL → champ pour stocker l’email, qui doit être unique.
 => password VARCHAR(255) NOT NULL → champ pour stocker le mot de passe haché (crypté).
@@ -110,4 +110,4 @@ Clé secrète pour sécuriser les sessions.
     - Si les identifiants sont bons, "Connexion réussie ! "
 [6] Vérification si l'utilisateur est connecter à /monespace (voir auth.js ligne 72 - 77)
 => Si req.sessionUserId n'existe pas, l'utilisateur n'est pas connecté => "Accés refusé."
-=> Sinon, on affiche "Bienvenue [nom] dans votre espace personnel.". 
+=> Sinon, on affiche "Bienvenue [nom] dans votre espace personnel.".*/
