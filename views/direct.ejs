@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <%- include('navbar') %>
+
+    <div class="container">
+        <h1>🔴 Live - Diffusion en Direct</h1>
+        
+        <!-- Lecteur vidéo -->
+        <div class="video-container">
+            <video controls autoplay>
+        <!--"Controls" pour l'ajout des boutons de lecture et "Autoplay" pour 
+        démarrer automatiquement la vidéo lorsque la page est chargé-->
+                <source src="/videos/live.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+
+        <p>Regardez votre émission en direct !</p>
+    </div>
+
+    <%- include('footer') %>
+
+</body>
+</html>

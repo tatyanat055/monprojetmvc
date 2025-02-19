@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Chaîne Yatru</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <%- include('navbar') %>
+
+    <div class="login-container">
+        <h2>Connexion</h2>
+        <form action="/login" method="POST">
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn-login">Se connecter</button>
+
+            <div class="login-links">
+                <a href="#">Mot de passe oublié ?</a>
+                <a href="/inscription">Créer un compte</a>
+            </div>
+        </form>
+    </div>
+
+    <%- include('footer') %>
+
+</body>
+</html>

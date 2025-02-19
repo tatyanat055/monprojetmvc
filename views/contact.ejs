@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <%- include('navbar') %> <!-- Inclusion de la navbar -->
+
+    <h1>Contactez-nous</h1>
+    <p>Remplissez le formulaire ci-dessous pour nous envoyer un message.</p>
+
+    <form action="/submit-contact" method="POST">
+        <table>
+            <tr>
+                <td><label for="nom">Nom :</label></td>
+                <td><input type="text" id="nom" name="nom" required></td>
+            </tr>
+            <tr>
+                <td><label for="prenom">Prénom :</label></td>
+                <td><input type="text" id="prenom" name="prenom" required></td>
+            </tr>
+            <tr>
+             <td><label for="email">Adresse e-mail :</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message :</label></td>
+                <td><textarea id="message" name="message" rows="5" required></textarea></td>
+            </tr>
+        </table>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <%- include('footer') %> 
+
+</body>
+</html>
